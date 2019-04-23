@@ -11,7 +11,7 @@ class Entity {
 		this.isMovingToNewSection = false;
 		// maybe reference to the section this char resides in too
 
-		/* - todom remove the commented out section here
+		
 
 		if(username) {
 
@@ -42,7 +42,7 @@ class Entity {
 			};
 		}
 
-		*/
+		
 
 	}
 
@@ -57,7 +57,11 @@ class Entity {
 		// auto attacks etc
 	}
 
-	onDestory() {
+	update(delta) {
+
+	}
+
+	onDestroy() {
 		// unwatch
 		this.svChannel.unwatch();
 	}
